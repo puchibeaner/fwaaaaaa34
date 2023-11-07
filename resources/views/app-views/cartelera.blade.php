@@ -49,7 +49,7 @@
 
     <div class="card-group d-flex flex-row flex-wrap">
         <div class="card" style="width: 21rem;">
-            <img src="/imagenes/spider.jpg" class="card-img-top" alt="Spider-Man: No Way Home">
+            <img src="../../app-assets/images/spider.jpg" class="card-img-top" alt="Spider-Man: No Way Home">
             <div class="card-body">
                 <h5 class="card-title">Spider-Man: No Way Home</h5>
                 </div>
