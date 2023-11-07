@@ -9,7 +9,7 @@
             <title>sing in</title>
             <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
             
-            <link href="{{ asset('assets/css/bootstrap.min.css') }} " rel="stylesheet">
+            <link href="{{ asset('public/css/plantilla.css') }} " rel="stylesheet">
                
 
             <style>
@@ -28,7 +28,6 @@
                 }
                 }
             </style>
-            <link href="{{ asset('css/plantilla.css') }}" rel="stylesheet">
         
         </head>
 
