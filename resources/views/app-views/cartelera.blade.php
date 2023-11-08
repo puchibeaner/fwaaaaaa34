@@ -35,21 +35,21 @@
     </nav>
 
 
-    <div class="category-box">
+    <div class="category-box1">
         <h2>Categorías</h2>
         <button>Películas de Acción</button>
         <button>Comedias Románticas</button>
         <button>Ciencia Ficción</button>
     </div>
   
-    <div class="comment-box">
+    <div class="comment-box1">
         <h2>Comentarios</h2>
         <!-- Contenido de la caja de comentarios -->
     </div>
 
     <div class="card-group d-flex flex-row flex-wrap">
-        <div class="card" style="width: 21rem;">
-            <img src="../../app-assets/images/spider.jpg" class="card-img-top" alt="Spider-Man: No Way Home">
+        <div class="card1" style="width: 21rem;">
+            <img src="Desktop/GitHub/fwaaaaaa34/public/imagenes/Matrix" class="card-img-top" alt="Spider-Man: No Way Home">
             <div class="card-body">
                 <h5 class="card-title">Spider-Man: No Way Home</h5>
                 </div>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <!-- Repite el patrón para las demás tarjetas -->
-            <div class="card" style="width: 21rem;">
+            <div class="card1" style="width: 21rem;">
                 <img src="/imagenes/inception.jpg" class="card-img-top" alt="Inception">
                 <div class="card-body">
                     <h5 class="card-title">Inception</h5>
@@ -77,13 +77,13 @@
                         <li class="list-group-item">Director: Christopher Nolan</li>
                     </ul>
                     <div class="card-body">
-                        <a href="/vista-de.pelicula.html" class="card-link">Ver película</a>
+                        <a href="Desktop\GitHub\fwaaaaaa34\public\resources\views\app-views\vista-de-pelicula" class="card-link">Ver película</a>
                        
                     </div>
                 </div>
                 
                 <!-- Repite el patrón para las demás tarjetas -->
-                <div class="card" style="width: 21rem;">
+                <div class="card1" style="width: 21rem;">
                     <img src="/imagenes/La La Land.jpg" class="card-img-top" alt="La La Land">
                     <div class="card-body">
                         <h5 class="card-title">La La Land</h5>
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="card-group d-flex flex-row flex-wrap">
-                    <div class="card" style="width: 21rem;">
+                    <div class="card1" style="width: 21rem;">
                         <img src="/imagenes/El padrino.jpg" class="card-img-top" alt="Spider-Man: No Way Home">
                         <div class="card-body">
                             <h5 class="card-title">El Padrino</h5>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <!-- Repite el patrón para las demás tarjetas -->
-                        <div class="card" style="width: 21rem;">
+                        <div class="card1" style="width: 21rem;">
                             <img src="/imagenes/Matrix.jpg" class="card-img-top" alt="Inception">
                             <div class="card-body">
                                 <h5 class="card-title">Matrix</h5>
@@ -138,7 +138,7 @@
                             </div>
                             
                             <!-- Repite el patrón para las demás tarjetas -->
-                            <div class="card" style="width: 21rem;">
+                            <div class="card1" style="width: 21rem;">
                                 <img src="/imagenes/Titanic.jpg" class="card-img-top" alt="La La Land">
                                 <div class="card-body">
                                     <h5 class="card-title">Titanic</h5>

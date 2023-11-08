@@ -9,7 +9,7 @@
             <title>sing in</title>
             <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
             
-            <link href="{{ asset('public/css/plantilla.css') }} " rel="stylesheet">
+            <link href="{{ asset('css/plantilla.css') }} " rel="stylesheet">
                
 
             <style>
@@ -28,6 +28,7 @@
                 }
                 }
             </style>
+
         
         </head>
 
@@ -35,7 +36,7 @@
 
         @yield('content')
 
-        <link href="{{ asset('public/js/backjs.js') }}" type="text/js">
+        <link href="{{ asset('js/backjs.js') }}" type="text/js">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-brcf8Ev8QfWD6bK5tuZ83K4Fme8T506mz+2AObEjOJ0Zvcq5cgtPPSJC6R5KgiLz" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 

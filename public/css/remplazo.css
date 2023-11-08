@@ -1,0 +1,365 @@
+/* Estilos para  de sing in */
+
+
+header, footer, .mb-3 {
+    text-align: center;
+  }
+  
+  img.mb-4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-container {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 30px;
+  }
+  
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #84abd1;
+    color: #395b7e;
+  }
+  
+  /* Estilos para el formulario de inicio de sesión */
+  .inicio-sesion-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out; /* Animación de entrada */
+  }
+  
+  .inicio-sesion-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideInDown 0.5s ease-in-out; /* Animación de entrada */
+  }
+  
+  .inicio-sesion-form label {
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: slideInLeft 0.5s ease-in-out 0.3s forwards; /* Animación de entrada */
+  }
+  
+  .inicio-sesion-form input[type="text"],
+  .inicio-sesion-form input[type="password"],
+  .inicio-sesion-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: slideInRight 0.5s ease-in-out 0.6s forwards; /* Animación de entrada */
+  }
+  
+  .inicio-sesion-form button[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadeIn 0.5s ease-in-out 0.9s forwards; /* Animación de entrada */
+  }
+  
+  .inicio-sesion-form button[type="submit"]:hover {
+    background-color: #005bae;
+  }
+  
+  /* Estilos para el enlace de registro */
+  .inicio-sesion-form p {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out 1.2s forwards; /* Animación de entrada */
+  }
+  
+  .inicio-sesion-form a {
+    color: #0078d4;
+    text-decoration: none;
+  }
+  
+  .inicio-sesion-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animaciones personalizadas */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  /*vista-de-peliculas*/
+
+  body {
+    background-color: rgb(58, 146, 161);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.card img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Registro*/
+/* Estilos para el formulario de registro */
+.registro-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out; /* Animación de entrada */
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #84abd1;
+    color: #395b7e;
+  }
+
+.registro-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideInDown 0.5s ease-in-out; /* Animación de entrada */
+}
+
+.registro-form label {
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: slideInLeft 0.5s ease-in-out 0.3s forwards; /* Animación de entrada */
+}
+
+.registro-form input[type="text"],
+.registro-form input[type="password"],
+.registro-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: slideInRight 0.5s ease-in-out 0.6s forwards; /* Animación de entrada */
+}
+
+.registro-form button[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadeIn 0.5s ease-in-out 0.9s forwards; /* Animación de entrada */
+}
+
+.registro-form button[type="submit"]:hover {
+    background-color: #005bae;
+}
+
+/* Estilos para el enlace de inicio de sesión */
+.registro-form p {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out 1.2s forwards; /* Animación de entrada */
+}
+
+.registro-form a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+.registro-form a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/*Cartelera*/
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    margin: 7%;
+    margin-top: 1cm;
+    white-space-collapse: 12rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 20px;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    margin: 1cm;
+}
+
+.comment-box {
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 1cm;
+    margin-top: 1cm;
+    margin-left: 36%;
+    width: 35%;
+    margin-bottom: 2%;
+}
+
+.category-box {
+    background-color: white;
+    padding: 2%;
+    padding-top: 7px ;
+    border-radius: 5px;
+    margin: 1px;
+    margin-top: 1cm;
+    width: 90%;
+    margin-bottom: 2% ;
+    margin-left: 7%; /* Mueve estos elementos hacia la derecha dentro de card-group */
+}
+
+/* Agrega estilos a los botones dentro de .category-box */
+.category-box button {
+    background-color: #4b92dd; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 8px 8px; /* Relleno interno */
+    margin: 20px; /* Márgenes */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+.category-box button:hover {
+    background-color: #4b92dd; /* Color de fondo al pasar el mouse */
+}
+
+.category-box button:focus {
+    outline: none; /* Elimina el contorno al enfocarse */
+    box-shadow: 0 0 0 3px rgba(177, 208, 241, 0.5); /* Sombra al enfocarse */
+}
+

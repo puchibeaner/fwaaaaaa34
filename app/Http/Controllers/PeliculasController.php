@@ -12,6 +12,7 @@ class PeliculasController extends Controller
     public function index()
     {
         return view("app-views.cartelera");
+        
     }
 
     /**
