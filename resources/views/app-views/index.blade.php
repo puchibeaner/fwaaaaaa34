@@ -8,7 +8,7 @@
                 <h1 class="h3 mb-3 fw-normal">Bienvenido</h1>
                         <h1>PARAFRUCTUS</h1>              
                 <form action="cartelera.html" method="get">
-                    <label for="nombre">Nombre de usuario:</label>
+                    <label for="nombre">Correo Electronico:</label>
                     <input type="text" id="nombre" name="nombre" required>
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
@@ -16,6 +16,7 @@
                     
                 </form>
                 <p>No tienes una cuenta aún? <a href="/Tarea-main/GitHub/registro.html" id="registro-link">Regístrate aquí</a></p>
+                <p><a href="/Tarea-main/GitHub/registro.html" id="registro-link">¿Olvidaste tu contraseña?</a></p>
             </section>
         </main>
         <footer>

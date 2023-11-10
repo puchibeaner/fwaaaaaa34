@@ -11,7 +11,7 @@ class PeliculasController extends Controller
      */
     public function index()
     {
-        return view("app-views.cartelera");
+        return view("app-views.registro");
         
     }
 
