@@ -65,7 +65,7 @@
     </div>
     <!-- Repite el patrón para las demás tarjetas -->
     <div class="card1" style="width: 21rem;">
-        <img src="/imagenes/inceptcion.jpg" class="card-img-top" alt="Inception">
+        <img src="/imagenes/iception.jpg" class="card-img-top" alt="Inception">
         <div class="card-body">
             <h5 class="card-title">Inception</h5>
         </div>
@@ -76,7 +76,7 @@
             <li class="list-group-item">Director: Christopher Nolan</li>
         </ul>
         <div class="card-body">
-            <a href="Desktop\GitHub\fwaaaaaa34\public\resources\views\app-views\vista-de-pelicula"
+            <a href="/imagenes/iception.jpg"
                 class="card-link">Ver película</a>
         </div>
     </div>
