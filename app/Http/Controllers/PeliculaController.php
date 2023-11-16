@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pelicula;
 use Illuminate\Http\Request;
 
-class PeliculasController extends Controller
+class PeliculaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view("app-views.registro");
-        
+        //
     }
 
     /**
@@ -34,7 +34,7 @@ class PeliculasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Pelicula $pelicula)
     {
         //
     }
@@ -42,7 +42,7 @@ class PeliculasController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Pelicula $pelicula)
     {
         //
     }
@@ -50,7 +50,7 @@ class PeliculasController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Pelicula $pelicula)
     {
         //
     }
@@ -58,7 +58,7 @@ class PeliculasController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Pelicula $pelicula)
     {
         //
     }
