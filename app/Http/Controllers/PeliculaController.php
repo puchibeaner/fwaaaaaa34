@@ -12,7 +12,7 @@ class PeliculaController extends Controller
      */
     public function index()
     {
-        //
+        return view ("peliculas");   
     }
 
     /**
@@ -20,7 +20,7 @@ class PeliculaController extends Controller
      */
     public function create()
     {
-        //
+        return view ("peliculas");
     }
 
     /**
