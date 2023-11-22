@@ -12,7 +12,7 @@ class PeliculaController extends Controller
      */
     public function index()
     {
-        return view ("peliculas");   
+        return view ('app-views.cartelera');   
     }
 
     /**
@@ -20,7 +20,7 @@ class PeliculaController extends Controller
      */
     public function create()
     {
-        return view ("peliculas");
+        return view ("app-views.formulario");
     }
 
     /**
@@ -28,7 +28,18 @@ class PeliculaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $peliculas = new pelicula;
+        $peliculas->name = $request->input('name');
+        $peliculas ->elenco = $request->input('elenco');
+        $peliculas -> productor = $request->input('productor');
+        $peliculas -> descripcion = $request->input('descripcion');
+        $peliculas -> calificacion = $request->input('calificacion');
+        $peliculas -> clasificacion = $request->input('clasificacion');
+        $peliculas -> imagen = $request->input('imagen');
+        $peliculas -> Genero = $request->input('Genero');
+        $peliculas -> save;
+
+        return view ('app-views.cartelera');   
     }
 
     /**

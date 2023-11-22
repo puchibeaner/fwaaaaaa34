@@ -1,49 +1,48 @@
 @extends('app-views.layout.plantilla')
 @section('content')
 
+<form method="post" action ="{{route('peliculas.store')}}" id="movieForm">
+ @csrf
+        <label for="name">Nombre de la Película:</label>
+        <input type="text" id="name" name="name" required>
 
-<form id="movieForm">
-        <label for="movieName">Nombre de la Película:</label>
-        <input type="text" id="movieName" name="movieName" required>
+        <label for="elenco">Actores:</label>
+        <input type="text" id="elenco" name="elenco" required>
 
-        <label for="movieActores">Actores:</label>
-        <input type="text" id="movieActores" name="movieActores" required>
+        <label for="productor">Productor:</label>
+        <input type="text" id="productor" name="productor" required>
 
-        <label for="movieDescription">Descripción:</label>
-        <textarea id="movieDescription" name="movieDescription" rows="4" required></textarea>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
 
-        <label for="movieImage">Imagen de la Película (URL):</label>
-        <input type="text" id="movieImage" name="movieImage" required>
+        <label for="calificacion">Calificacion:</label>
+        <select id="calificacion" name="calificacion" required>
+            <option value="1">1/10</option>
+            <option value="2">2/10</option>
+            <option value="3">3/10</option>
+            <option value="4">4/10</option>
+            <option value="5">5/10</option>
+            <option value="6">6/10</option>
+            <option value="7">7/10</option>
+            <option value="8">8/10</option>
+            <option value="9">9/10</option>
+            <option value="10">10/10</option>
+        </select>
 
-        <label for="movieRating">Clasificación:</label>
-        <select id="movieRating" name="movieRating" required>
+        <label for="clasificacion">Clasificación:</label>
+        <select id="clasificacion" name="clasificacion" required>
             <option value="G">G</option>
             <option value="PG">PG</option>
             <option value="PG-13">PG-13</option>
             <option value="R">R</option>
         </select>
 
-        <label for="movieGenre">Género:</label>
-        <input type="text" id="movieGenre" name="movieGenre" required>
+        <label for="imagen">Imagen de la Película (URL):</label>
+        <input type="text" id="imagen" name="imagen" required>
 
-        <button type="button" onclick="resetForm()">Borrar</button>
-        <button type="button" onclick="publishMovie()">Publicar</button>
-    </form>
-
-    <script>
-        function resetForm() {
-            document.getElementById("movieForm").reset();
-        }
-
-        function publishMovie() {
-            // Aquí puedes agregar la lógica para publicar la película
-            alert("Película publicada:\nNombre: " + document.getElementById("movieName").value +
-                  "\nActores: " + document.getElementById("movieActores").value +  
-                  "\nDescripción: " + document.getElementById("movieDescription").value +
-                  "\nImagen: " + document.getElementById("movieImage").value +
-                  "\nClasificación: " + document.getElementById("movieRating").value +
-                  "\nGénero: " + document.getElementById("movieGenre").value);
-        }
-    </script>
+        <label for="Genero">Género:</label>
+        <input type="text" id="Genero" name="Genero" required>
+        <button type="submit" >Publicar</button>
+</form>
 
 @endsection

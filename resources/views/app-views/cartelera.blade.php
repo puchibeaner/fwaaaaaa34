@@ -1,38 +1,6 @@
 @extends('app-views.layout.plantilla')
 @section('content')
 
-<nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
-            <img src="/imagenes/Logo.jpg" class="card-img-top" alt="10px" style="width: 90px; height: 90px;">
-            <a class="navbar-brand text-white" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    </li>
-                    <li class="nav-item"> 
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Inicio de sesión
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                    </li>
-                </ul>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
 <div class="category-cartelera">
     <div> 
         <h2>Categorías</h2>

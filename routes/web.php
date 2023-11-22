@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/peliculas', 'App\Http\Controllers\PeliculasController')->name('*','pelicula');
+Route::resource('/peliculas', 'App\Http\Controllers\PeliculaController')->name('*','pelicula');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

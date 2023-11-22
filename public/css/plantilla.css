@@ -319,3 +319,39 @@ body {
   box-shadow: 0 0 0 3px rgba(177, 208, 241, 0.5); /* Sombra al enfocarse */
 }
 
+/*Formulario peliculas*/
+
+#movieForm {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin-top: 5%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
