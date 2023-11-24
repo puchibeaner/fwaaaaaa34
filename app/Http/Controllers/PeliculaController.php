@@ -12,8 +12,12 @@ class PeliculaController extends Controller
      */
     public function index()
     {
-        return view ('app-views.cartelera');   
+        $registros = Pelicula::all();
+        return view ('app-views.cartelera', compact ('registros'));
+        
     }
+
+    
 
     /**
      * Show the form for creating a new resource.
@@ -28,16 +32,16 @@ class PeliculaController extends Controller
      */
     public function store(Request $request)
     {
-        $peliculas = new pelicula;
+        $peliculas = new Pelicula;
         $peliculas->name = $request->input('name');
-        $peliculas ->elenco = $request->input('elenco');
-        $peliculas -> productor = $request->input('productor');
-        $peliculas -> descripcion = $request->input('descripcion');
-        $peliculas -> calificacion = $request->input('calificacion');
-        $peliculas -> clasificacion = $request->input('clasificacion');
-        $peliculas -> imagen = $request->input('imagen');
-        $peliculas -> Genero = $request->input('Genero');
-        $peliculas -> save;
+        $peliculas->elenco = $request->input('elenco');
+        $peliculas->productor = $request->input('productor');
+        $peliculas->descripcion = $request->input('descripcion');
+        $peliculas->calificacion = $request->input('calificacion');
+        $peliculas->clasificacion = $request->input('clasificacion');
+        $peliculas->imagen = $request->input('imagen');   
+        $peliculas->genero = $request->input('genero');
+        $peliculas->save();
 
         return view ('app-views.cartelera');   
     }

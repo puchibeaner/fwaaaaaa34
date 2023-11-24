@@ -41,7 +41,7 @@
         <input type="text" id="imagen" name="imagen" required>
 
         <label for="Genero">Género:</label>
-        <input type="text" id="Genero" name="Genero" required>
+        <input type="text" id="Genero" name="genero" required>
         <button type="submit" >Publicar</button>
 </form>
 
