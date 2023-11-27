@@ -17,7 +17,9 @@
 
 <div class="card-group d-flex flex-row flex-wrap">
     @foreach($registros as $registro)
-        <div class="card1" style="width: 21rem;">
+    
+    <div class="card1" style="width: 21rem;">
+        <div class="cuadrado">
             <img src="{{ $registro->imagen }}" class="card-img-top" alt="Spider-Man: No Way Home">
             <div class="card-body">
                 <h5 class="card-title">{{ $registro->name }}</h5>
@@ -34,5 +36,6 @@
                 <a href="{{ url('/peliculas', $registro->id) }}" class="card-link">Ver película</a>
             </div>
         </div>
+    </div>
     @endforeach
 @endsection

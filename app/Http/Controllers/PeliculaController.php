@@ -13,7 +13,7 @@ class PeliculaController extends Controller
     public function index()
     {
         $registros = Pelicula::all();
-        return view ('app-views.cartelera', compact ('registros'));
+        return view ('app-views.vista-de-pelicula', compact ('registros'));
         
     }
 

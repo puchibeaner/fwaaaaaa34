@@ -355,3 +355,11 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+
+.cuadrado {
+  width: 370px;           /* Ancho de 150 píxeles */
+  height: 850px;          /* Alto de 150 píxeles */
+  border-radius: 10px;
+  border: 2px solid #000; /* Borde color negro y de 1 píxel de grosor */
+}
