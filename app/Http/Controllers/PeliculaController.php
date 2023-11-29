@@ -13,8 +13,8 @@ class PeliculaController extends Controller
     public function index()
     {
         $registros = Pelicula::all();
-        return view ('app-views.vista-de-pelicula', compact ('registros'));
-        
+        return view ('app-views.cartelera', compact ('registros'));
+
     }
 
     
@@ -49,17 +49,19 @@ class PeliculaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Pelicula $pelicula)
+    public function show($id)
     {
-        //
+        $pelicula = Pelicula::where('id', "=", $id)->first();
+        return view ('app-views.vista-de-pelicula',compact('pelicula'));  
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Pelicula $pelicula)
+    public function edit($id)
     {
-        //
+        $pelicula = Pelicula::where('id', "=", $id)->first();
+        return view ('app-views.formularioedit',compact('pelicula')); 
     }
 
     /**
@@ -73,8 +75,10 @@ class PeliculaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Pelicula $pelicula)
+    public function destroy($id)
     {
-        //
+        Pelicula::find($id)->delete();
+        $registros = Pelicula::all();
+        return view ('app-views.cartelera', compact ('registros'));
     }
 }

@@ -13,8 +13,8 @@
                                     <img src="/imagenes/descarga.jpg" alt="Título de la Película" class="img-fluid">
                                 </div>
                                 <div class="col-md-8">
-                                    <h2 class="card-title">Título de la Película</h2>
-                                    <p><strong>Director:</strong> <a href="URL_DEL_DIRECTOR">Director de la Película</a></p>
+                                    <h2 class="card-title">{{$pelicula->name}}</h2>
+                                    <p><strong>Director:</strong> <a href="URL_DEL_DIRECTOR">{{$pelicula->name}}</a></p>
                                     <p><strong>Año:</strong> Año de lanzamiento</p>
                                     <p><strong>Género:</strong> <a href="URL_DEL_GENERO">Género de la Película</a></p>
                                     <p><strong>Descripción:</strong> Descripción de la Película. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

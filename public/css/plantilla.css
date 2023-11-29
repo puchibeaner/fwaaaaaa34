@@ -356,10 +356,64 @@ button:hover {
   background-color: #0056b3;
 }
 
+/*estilos para el acordion de la cartelera*/
+
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: auto ;
+  color: black;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: auto;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
+}
+
+
+
 
 .cuadrado {
   width: 370px;           /* Ancho de 150 píxeles */
-  height: 850px;          /* Alto de 150 píxeles */
+  height: 900px;          /* Alto de 150 píxeles */
   border-radius: 10px;
   border: 2px solid #000; /* Borde color negro y de 1 píxel de grosor */
 }
