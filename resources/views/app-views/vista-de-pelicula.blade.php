@@ -14,10 +14,10 @@
                                 </div>
                                 <div class="col-md-8">
                                     <h2 class="card-title">{{$pelicula->name}}</h2>
-                                    <p><strong>Director:</strong> <a href="URL_DEL_DIRECTOR">{{$pelicula->name}}</a></p>
-                                    <p><strong>Año:</strong> Año de lanzamiento</p>
-                                    <p><strong>Género:</strong> <a href="URL_DEL_GENERO">Género de la Película</a></p>
-                                    <p><strong>Descripción:</strong> Descripción de la Película. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p><strong>Director:</strong> <a href="URL_DEL_DIRECTOR">{{$pelicula->productor}}</a></p>
+                                    <p><strong>elenco:</strong> {{$pelicula->elenco}}</p>
+                                    <p><strong>Género:</strong> <a href="URL_DEL_GENERO">{{$pelicula->Genero}}</a></p>
+                                    <p><strong>Descripción:</strong> {{$pelicula->Descripción}}</p>
                                 </div>
                                 
                             </div>

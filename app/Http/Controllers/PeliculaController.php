@@ -67,9 +67,25 @@ class PeliculaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Pelicula $pelicula)
+    public function update(Request $request, $id)
     {
-        //
+        $formdata = array (
+
+            'name'=> $request->name,
+            'elenco'=> $request->elenco,
+            'productor'=> $request->productor,
+            'descripcion'=> $request->descripcion,
+            'calificacion'=> $request->calificacion,
+            'clasificacion'=> $request->clasificacion,
+            'imagen'=> $request->imagen,
+            'genero'=> $request->genero
+        );
+
+        $pelicula = Pelicula::whereId($id)->update($formdata);
+        $registros = Pelicula::all();
+        return view ('app-views.cartelera', compact ('registros'));
+
+
     }
 
     /**
