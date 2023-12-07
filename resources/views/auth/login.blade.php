@@ -46,7 +46,7 @@
             </x-primary-button>
         </div>
     </form>
-                <p>¿No tienes una cuenta aún? <a href="/Tarea-main/GitHub/registro.html" id="registro-link">Regístrate aquí</a></p>
+                <p>¿No tienes una cuenta aún? <a href="{{ url('/registro')}}" id="registro-link">Regístrate aquí</a></p>
                 <p><a href="/Tarea-main/GitHub/registro.html" id="registro-link">¿Olvidaste tu contraseña?</a></p>
             </section>
         </main>

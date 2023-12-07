@@ -10,14 +10,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="/imagenes/descarga.jpg" alt="Título de la Película" class="img-fluid">
+                                    <img src="{{$pelicula->imagen}}" alt="Título de la Película" class="img-fluid">
                                 </div>
                                 <div class="col-md-8">
                                     <h2 class="card-title">{{$pelicula->name}}</h2>
-                                    <p><strong>Director:</strong> <a href="URL_DEL_DIRECTOR">{{$pelicula->productor}}</a></p>
+                                    <p><strong>Director:</strong> <a href="">{{$pelicula->productor}}</a></p>
                                     <p><strong>elenco:</strong> {{$pelicula->elenco}}</p>
-                                    <p><strong>Género:</strong> <a href="URL_DEL_GENERO">{{$pelicula->Genero}}</a></p>
-                                    <p><strong>Descripción:</strong> {{$pelicula->Descripción}}</p>
+                                    <p><strong>Género:</strong> <a href="URL_DEL_GENERO">{{$pelicula->genero}}</a></p>
+                                    <p><strong>Descripción:</strong> {{$pelicula->descripcion}}</p>
                                 </div>
                                 
                             </div>
